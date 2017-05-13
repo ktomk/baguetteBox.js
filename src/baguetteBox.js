@@ -69,7 +69,7 @@
     // Array containing temporary images DOM elements
     var imagesElements = [];
     // The last focused element before opening the overlay
-    var documentLastFocus = null;
+    var documentLastFocus = {focus: function(){}};
     var overlayClickHandler = function(event) {
         // Close the overlay when user clicks directly on the background
         if (event.target.id.indexOf('baguette-img') !== -1) {
